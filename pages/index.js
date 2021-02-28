@@ -6,12 +6,11 @@ import Experience from "../components/Experience";
 const Index = () => (
   <Layout>
     {/** Header card **/}
-
     <header className="row">
       <div className="col-md-12">
         <div className="card bg-secondary card-body text-white">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 text-center">
               <img
                 src="profile.png"
                 className="img-fluid"
@@ -73,6 +72,21 @@ const Index = () => (
     </div>
 
     {/** Projects section **/}
+    <div className="row">
+      <div className="col-md-12">
+        <div className="card card-body bg-dark">
+          <div className="col-md-12">
+            <h1 className="text-center text-light">Portfolio</h1>
+
+            <div className="col-md-4">
+              <div className="card">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 );
 

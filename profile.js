@@ -18,7 +18,7 @@ export const experiences = [
   },
   {
     company: "Ministerio Publico de Managua",
-    role: "Digitizer",
+    role: "Data Digitizer",
     from: "July 2017",
     to: "August 2017",
     description:
