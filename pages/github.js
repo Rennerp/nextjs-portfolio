@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Error from "./_error";
+import Error from "../components/Error";
 
 const Github = ({ user, status_code }) => {
   if (status_code) {
@@ -10,9 +10,9 @@ const Github = ({ user, status_code }) => {
     <Layout>
       <div className="row">
         <div className="col-md-4 offset-md-4">
-          <card className="card card-body text-center">
+          <div className="card card-body text-center">
             <h1>{user.name}</h1>
-            <img src={user.avatar_url} alt="" />
+            <img src={user.avatar_url} alt="" className="img-fluid" />
             <p className="py-2">{user.bio}</p>
             <a
               className="btn btn-outline-secondary my-1"
@@ -21,7 +21,7 @@ const Github = ({ user, status_code }) => {
             >
               Go to Github
             </a>
-          </card>
+          </div>
         </div>
       </div>
     </Layout>
