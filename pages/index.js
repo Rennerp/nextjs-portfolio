@@ -1,7 +1,8 @@
 import Layout from "../components/Layout";
-import { skills, experiences } from "../profile";
+import { skills, experiences, projects } from "../profile";
 import Skill from "../components/Skill";
 import Experience from "../components/Experience";
+import Project from "../components/Project";
 
 const Index = () => (
   <Layout>
@@ -75,14 +76,18 @@ const Index = () => (
     <div className="row">
       <div className="col-md-12">
         <div className="card card-body bg-dark">
-          <div className="col-md-12">
-            <h1 className="text-center text-light">Portfolio</h1>
-
-            <div className="col-md-4">
-              <div className="card">
-                <img src="" alt="" />
-              </div>
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="text-center text-light">Portfolio</h1>
             </div>
+            {projects.map(({ title, description, image }, i) => (
+              <Project
+                key={i}
+                title={title}
+                description={description}
+                image={image}
+              />
+            ))}
           </div>
         </div>
       </div>

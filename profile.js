@@ -25,3 +25,24 @@ export const experiences = [
       "In charge of entering files into the public prosecutor's software (SAREF)",
   },
 ];
+
+export const projects = [
+  {
+    title: "Accounting Software",
+    description:
+      "Sales, inventory and payroll software, designed and developed using Laravel 6 framework, and MySQL database.",
+    image: "laravel.jpg",
+  },
+  {
+    title: "Helpdesk",
+    description:
+      "Helpdesk developed for the National Autonomus University of Nicaragua, this project was built using ASP MVC 5, and MicrosoftSQL Server.",
+    image: "mvc.jpg",
+  },
+  {
+    title: "Administrative Software",
+    description:
+      "Administrative Desktop App designed and developed with Visual Basic .NET and MicrosoftSQL Server",
+    image: "celnicsa.jpg",
+  },
+];
